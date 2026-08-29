@@ -5,7 +5,7 @@ Trabalhos e projetos acadêmicos desenvolvidos durante o curso de **Engenharia d
 
 Este repositório reúne, em um só lugar, os trabalhos que antes estavam espalhados em
 repositórios separados. Cada pasta corresponde a uma disciplina e contém o código como foi
-entregue, mais as anotações de contexto de cada trabalho.
+entregue.
 
 ---
 
@@ -13,15 +13,16 @@ entregue, mais as anotações de contexto de cada trabalho.
 
 | Disciplina | Pasta | Sobre o trabalho | Linguagem |
 |---|---|---|---|
-| Fundamentos de Algoritmos | [`fundamentos-de-algoritmos/`](./fundamentos-de-algoritmos) | Exercícios e implementações dos algoritmos base da disciplina: lógica, iteração, recursão e manipulação de estruturas simples. | Python |
-| Estrutura de Dados | [`estrutura-de-dados/trabalho-1/`](./estrutura-de-dados/trabalho-1) | Primeiro trabalho prático da disciplina, com implementação das estruturas de dados estudadas em aula. | Python |
+| Fundamentos de Algoritmos | [`fundamentos-de-algoritmos/`](./fundamentos-de-algoritmos) | Exercícios e implementações dos algoritmos base da disciplina, incluindo leitura e processamento de dados a partir de arquivo CSV. | Python |
+| Estrutura de Dados | [`estrutura-de-dados/trabalho-1/`](./estrutura-de-dados/trabalho-1) | Primeiro trabalho prático, com implementação e manipulação de arranjos e das estruturas de dados estudadas em aula. | Python |
 | Estrutura de Dados | [`estrutura-de-dados/trabalho-2/`](./estrutura-de-dados/trabalho-2) | Segundo trabalho prático, avançando sobre as estruturas e a análise de complexidade. | Python |
-| Programação Orientada a Objetos | [`programacao-orientada-a-objetos/`](./programacao-orientada-a-objetos) | Aplicação dos pilares de POO: encapsulamento, herança, polimorfismo e abstração, com modelagem de classes. | Java |
-| Programação Funcional | [`programacao-funcional/`](./programacao-funcional) | Implementações no paradigma funcional: imutabilidade, funções puras, recursão e pattern matching. | Gleam |
-| Organização e Recuperação de Dados | [`organizacao-e-recuperacao-de-dados/`](./organizacao-e-recuperacao-de-dados) | Implementação de registros e técnicas de compressão de dados, tratando organização de arquivos e recuperação da informação. | Python |
+| Programação Funcional | [`programacao-funcional/`](./programacao-funcional) | Cerca de 50 exercícios no paradigma funcional: imutabilidade, funções puras, recursão, pattern matching, ordenação e árvore de busca. | Gleam, Racket |
+| Organização e Recuperação de Dados | [`organizacao-e-recuperacao-de-dados/`](./organizacao-e-recuperacao-de-dados) | Implementação de registros e compressão de dados, tratando organização de arquivos e recuperação da informação sobre uma base de filmes. | Python |
 
-> As descrições acima são um resumo do escopo de cada disciplina. Cada pasta tem seu próprio
-> README com o enunciado do trabalho e as decisões de implementação.
+> As descrições acima resumem o escopo de cada disciplina.
+
+**Programação Orientada a Objetos** é mantida em repositório próprio:
+[Trabalho-de-POO](https://github.com/JocaMgtt0/Trabalho-de-POO) `Java`
 
 ---
 
@@ -33,7 +34,6 @@ academic-projects/
 ├── estrutura-de-dados/
 │   ├── trabalho-1/
 │   └── trabalho-2/
-├── programacao-orientada-a-objetos/
 ├── programacao-funcional/
 └── organizacao-e-recuperacao-de-dados/
 ```
@@ -42,31 +42,26 @@ academic-projects/
 
 ## Como executar
 
-Cada trabalho é independente e roda a partir da própria pasta.
-
 **Python**
 
 ```bash
-cd nome-da-pasta
-python main.py
+cd fundamentos-de-algoritmos
+python nome-do-arquivo.py
 ```
 
-**Java**
+Alguns scripts leem arquivos de dados da própria pasta (`medals.csv`, `filmes.dat`), então rode
+sempre de dentro do diretório do trabalho.
+
+**Racket**
 
 ```bash
-cd programacao-orientada-a-objetos
-javac *.java
-java Main
+racket programacao-funcional/nome-do-arquivo.rkt
 ```
 
 **Gleam**
 
-```bash
-cd programacao-funcional
-gleam run
-```
-
-Os nomes de arquivo variam por trabalho. Confira o README de cada pasta antes de rodar.
+Os arquivos `.gleam` são módulos soltos de exercícios, sem projeto Gleam configurado. Para
+executar, copie o módulo desejado para dentro de um projeto criado com `gleam new`.
 
 ---
 
