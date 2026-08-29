@@ -1,0 +1,28 @@
+# Windows / OneDrive
+desktop.ini
+Thumbs.db
+*.lnk
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Java
+*.class
+target/
+bin/
+
+# Gleam
+build/
+
+# Editores
+.vscode/
+.idea/
+
+# Arquivos compactados
+*.zip
