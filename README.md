@@ -22,7 +22,7 @@ entregue.
 > As descrições acima resumem o escopo de cada disciplina.
 
 **Programação Orientada a Objetos** é mantida em repositório próprio:
-[Trabalho-de-POO](https://github.com/JocaMgtt0/Trabalho-de-POO) `Java`
+[Medical-clinic-management-system](https://github.com/JocaMgtt0/Medical-clinic-management-system) `Java`
 
 ---
 
